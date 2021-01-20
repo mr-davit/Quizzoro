@@ -1,0 +1,133 @@
+<!DOCTYPE html> 
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-signin-client_id" content="12345678-gbgin9h7q69rpjehq1cd2441b4nosnid.apps.googleusercontent.com">
+
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/main.css" type="text/css" media="screen" >
+    <link rel="stylesheet" href="./css/captcha.css" type="text/css" media="screen" >
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <div class="header">
+        <div class="logohead"><a href="Index.html"><img src="./svg/logo.svg" alt="Logo"></a></div>
+        <div class="search">
+            <form>
+                <input type="search" id="search" name="search" placeholder="  Search"><br>
+            </form>
+        </div>
+
+        <div class="create"> <button class="create-quiz">Create Quiz</button></div>
+        <div class="sign"><a class="a-sign-in" href="#sign-in-pop"><button class="sign-in-button">Sign In</button></a></div>
+    </div>
+
+
+    <!-- sign in pop -->
+    <div id="sign-in-pop">
+
+        <p class="nu">New user <a class="ca" href="#create-acc-pop">Create Account</a> </p>
+<a href="#" class="close-sign-in-pop">X</a>
+        <form class="sign-in-form" action="#" method="POST">
+            <label for="username">Username:</label><br>
+            <input type="text" id="username" name="username" value=""><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" value=""><br>
+
+            <label class="css-label" for="remember">&nbsp;&nbsp;Remember Me:
+            <input class="css-checkbox" type="checkbox" id="remember" name="remember" value="" >
+            <span class="fancy-checkbox"></span>
+            <span class="fancy-check"></span>
+        </label>
+            <br>
+
+            <input class="form-login-btn" type="submit" id="login" name="login" value="LOG IN"><br>
+        </form>
+    </div>
+<!-- sign in pop -->
+
+<!-- Register pop  -->
+
+<div id="create-acc-pop">
+
+
+
+
+
+    <p class="nu">Already Have An Account&nbsp;&nbsp;<a class="ca" href="#sign-in-pop">  Sign in</a> </p>
+
+    <a href="#" id="close-create-acc-pop">X</a> 
+    
+ <form id="create-acc-f" class="create-acc-form" action="#" method="post">
+    <label for="email"> Email Address <br>
+<input type="email" id="email" name="email" value="" >
+    </label>
+    <br>
+    <label for="password"> Password
+        <br>
+        <input type="password" id="password" name="password" value="" >
+            </label>
+            <br>
+            <label for="password">Repeat Password <br>
+                <input type="password" id="Repeat-password" name="password" value="" >
+                    </label>
+
+                    <label for="birthdate"> Select Your Birth Date: 
+                    <input type="number" id="birthdate" name="birthdate"
+                    min="1922" max="2021">
+                </label>
+
+   <input class="form-login-btn" type="submit" id="register" name="register" value="Register"><br>
+
+                </form>
+
+<!-- Captcha -->
+                <div class="captcha">
+                    <div class="spinner">
+                        <label>
+                            <input type="checkbox" onclick="$(this).attr('disabled','disabled');">
+                            <span class="checkmark"><span>&nbsp;</span></span>
+                        </label>
+                    </div>
+                    <div class="text">
+                        I'm not a robot
+                    </div>
+                    <div class="logo">
+                        <img src="https://forum.nox.tv/core/index.php?media/9-recaptcha-png/"/>
+                        <p>reCAPTCHA</p>
+                        <small>Privacy - Terms</small>
+                    </div>
+                </div>
+
+
+</div>
+<!-- Register pop  -->
+
+
+    <div id="output"></div>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+
+        <script src="https://apis.google.com/js/api:client.js"></script>
+        <script>
+      
+        <script src="https://apis.google.com/js/platform.js?onload=renderButton" async defer></script>  -->
+
+</body>
+
+</html>

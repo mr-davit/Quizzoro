@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.a-sign-in {
+    text-decoration: none !important;
+}
+
+label {
+    cursor: pointer;
+}
+
+:root {
+    --txt-clr: rgba(255, 255, 255, 0.9);
+    --txt-clr-bl: rgba(0, 0, 0, 0.9);
+    --hover: opacity: 0.9;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(149, 1, 113);
+    background: linear-gradient(90deg, rgba(149, 1, 113, 1) 0%, rgba(0, 143, 172, 1) 47%, rgba(121, 9, 102, 1) 100%);
+}
+
+.logohead:hover {
+
+    opacity: 0.9;
+
+}
+
+.header {
+    margin: auto;
+    width: 90%;
+    height: 155px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    width: 56%;
+    position: relative;
+}
+
+.search1 {
+    width: 100%;
+}
+
+#search {
+    padding: 20px;
+    width: 100%;
+    height: 65px;
+    opacity: 0.77;
+    background: #fdfdfd;
+    border-radius: 33px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+#search:hover {
+
+    fill-opacity: 0.5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.create .sign {
+    display: block;
+}
+
+.create-quiz {
+    width: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23pt;
+    color: var(--txt-clr);
+    height: 65px;
+    background: linear-gradient(142deg, #09f8ff 7%, #0dff67 97%);
+    border-radius: 33px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+.create-quiz:hover  {
+    fill-opacity: 0.9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+}
+
+.sign-in-button {
+    font-size: 23pt;
+    color: var(--txt-clr);
+    width: 190px;
+    height: 65px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 4px solid #ffffff;
+    border-radius: 33px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+
+.sign-in-button:hover {
+
+
+    fill-opacity: 0.5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6);
+
+}
+
+#sign-in-pop {
+    visibility: hidden;
+    width: 580px;
+    height: 747px;
+    opacity: 0.95;
+    background: #ffffff;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 1999;
+    top: 160px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 40px 63px;
+}
+
+#sign-in-pop:target {
+    visibility: visible;
+}
+
+.close-sign-in-pop  {
+    margin-left: 57%;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nu {
+    display: inline;
+}
+
+.sign-in-form label {
+    padding-top: 30px;
+}
+
+.sign-in-form {
+    position: relative;
+    padding-top: 50px;
+}
+
+input[name=username], input[name=password] , input[name=email],  input[name=repeat-password] {
+    border-width: 0 0 2px 0;
+    width: 100%;
+}
+
+.css-checkbox {
+    opacity: 0;
+    z-index: 2001;
+    position: relative;
+    cursor: pointer;
+}
+
+.css-label {
+
+    text-indent: 20px;
+}
+.css-label:hover {
+
+    opacity: 0.8;
+}
+
+
+
+.fancy-check {
+    opacity: 0;
+    content: '';
+    background-image: url(../svg/Group\ 9212.svg);
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 4px;
+    top: 247px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    animation: 1s ease-in-out;
+}
+
+
+
+.css-checkbox:checked ~ .fancy-check {
+    transition: all .2s;
+
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+    opacity: 100;
+}
+
+
+.fancy-checkbox {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    left: 0;
+    top: 242px;
+    content: url(../svg/Ellipse.svg);
+    z-index: 2000;
+}
+
+
+.fancy-checkbox:hover {
+opacity: 0.9;
+background-color: rgba(94, 4, 97, 0.055);
+border-radius: 50%;
+}
+
+/* კოდი */
+
+
+.form-login-btn {
+    display: block;
+    margin: auto;
+    color: white;
+    font-size: 24px;
+    font-style: bold;
+    width: 299px;
+    height: 50px;
+    background: linear-gradient(90deg, #f100a2 3%, #6600f3 97%);
+    border-radius: 25px;
+    margin: 75px auto;
+}
+
+.googlebutton {
+
+    margin: 25px auto;
+
+}
+
+.my-signin2 {
+
+    border-radius: 50%;
+}
+
+#create-acc-pop {
+
+    visibility: hidden;
+    width: 580px;
+    height: 747px;
+    opacity: 0.95;
+    background: #ffffff;
+    border-radius: 5px;
+    position: fixed;
+    z-index: 1999;
+    top: 160px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 40px 63px;
+
+} 
+
+#close-create-acc-pop {
+    margin-left: 42%;
+    color: black;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+#create-acc-f label {
+
+    padding-top: 25px !important;
+    width: 100%;
+}
+
+#create-acc-f {
+
+    padding-top: 50px;
+    width: 100%;
+}
+
+#create-acc-pop:target {
+
+    visibility: visible;
+}
+
+/* 
+
+
+w3school
+label {
+width: 24px;
+height: 24px;
+background: none;
+border-radius: 50%;
+position: absolute;
+top: 0;
+left: 0;
+-webkit-filter: url(#goo);
+filter: url(#goo);
+transform: trasnlate3d(0,0,0);
+pointer-events: none;
+} */

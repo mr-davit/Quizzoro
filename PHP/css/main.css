@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --txt-clr: rgba(255, 255, 255, 0.9);
+    --txt-clr-bl: rgba(0, 0, 0, 0.9);
+--hover: opacity: 0.9;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: rgb(149, 1, 113);
+    background: linear-gradient(90deg, rgba(149, 1, 113, 1) 0%, rgba(0, 143, 172, 1) 47%, rgba(121, 9, 102, 1) 100%);
+}
+
+.header {
+    margin: auto;
+    width: 90%;
+    height: 155px;
+    display: flex;
+   
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    width: 56%;
+}
+
+.search1 {
+  width: 100%;  
+}
+#search {
+    padding: 20px;
+    width: 100%;
+    height: 65px;
+    opacity: 0.77;
+    background: #fdfdfd;
+    border-radius: 33px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+#search:hover {
+}
+.create .sign {
+    display: block;
+}
+
+.create-quiz {
+    width: 200px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 23pt;
+    color: var(--txt-clr);
+    height: 65px;
+    background: linear-gradient(142deg, #09f8ff 7%, #0dff67 97%);
+    border-radius: 33px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+.create-quiz:hover{
+    background: rgba(inherit, inherit, inherit, 0.5);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+
+}
+.sign-in {
+    font-size: 23pt;
+    color: var(--txt-clr);
+    width: 190px;
+    height: 65px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 4px solid #ffffff;
+    border-radius: 33px;
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.16);
+}
+
+.sign-in:hover {
+
+background-color: var(--hover);
+
+}
+
